@@ -3,6 +3,9 @@ package loose.oose.fis.documents;
 import java.util.Arrays;
 
 public class JSON extends Document {
+
+    private String[] continutSecret;
+
     public JSON(String[] continut) {
         super(continut);
     }
@@ -25,5 +28,13 @@ public class JSON extends Document {
     @Override
     public String toString() {
         return "JSON " + super.toString();
+    }
+
+    public void setContinutSecret(String[] continut) {
+        this.continutSecret = continut;
+    }
+
+    public String[] getContinutSecret() {
+        return continutSecret;
     }
 }
